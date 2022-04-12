@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<body>
+<body bgcolor = "#FFFFFF" onload = "loadSound()">
 
 <h1>CS 190</h1>
 <h2> Ethan Flaker </h2>
@@ -18,5 +18,22 @@
   My goal here is to have the same kind of sounds working in the same kind of way as Project 1: just type in my name, E-T-H-A-N, and you should be able to play
   Samples of notes C, D, E, F, and G, respectively. Give it a shot! </p>
   
+  
+<script>
+  var theSound;
+  function loadSound() {
+    try {
+      theSound = new Audio("https://drive.google.com/file/d/1l44Z1CfxJIUntPMiQ3QgH0SkXSnYrT-L/view?usp=sharing");
+    }
+    catch (theError) {
+      console.log(theError);
+    }
+  }
+  document.addEventListener('keydown', function(event) {
+    if (even.keyCode === 69) {
+      theSound.play();
+    }
+  }
+  </script>
 </body>
 </html>
