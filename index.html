@@ -23,16 +23,25 @@
   var theSound;
   function loadSound() {
     try {
-      theSound = new Audio("C4.mp3");
+      soundC = new Audio("C4.mp3");
+      soundD = new Audio("D4.mp3");
     }
     catch (theError) {
       console.log(theError);
     }
   }
   document.addEventListener('keydown', function(event) {
-    if (event.keyCode == 69) {
-      theSound.play();
-      console.log("You pressed the E key");
+    switch (event.keyCode) {
+      case 69:
+        soundC.play();
+        console.log("You pressed the E key");
+        break;
+      case 84:
+        soundD.play();
+        console.log("You pressed the T key");
+        break;
+      default:
+        console.log("I don't know this key!");
     }
   }, true);
   </script>
