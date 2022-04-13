@@ -25,6 +25,9 @@
     try {
       soundC = new Audio("C4.mp3");
       soundD = new Audio("D4.mp3");
+      soundE = new Audio("E4.mp3");
+      soundF = new Audio("F4.mp3");
+      soundG = new Audio("G4.mp3");
     }
     catch (theError) {
       console.log(theError);
@@ -39,6 +42,18 @@
       case 84:
         soundD.play();
         console.log("You pressed the T key");
+        break;
+      case 72:
+        soundE.play();
+        console.log("You pressed the H key");
+        break;
+      case 65:
+        soundF.play();
+        console.log("You pressed the A key");
+        break;
+      case 78:
+        soundG.play();
+        console.log("You pressed the N key");
         break;
       default:
         console.log("I don't know this key!");
